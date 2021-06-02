@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!---Ethan start-->
+
+    <link rel="stylesheet" href="ethan.css">
+    <title> Team 3's HTML webpage </title>
+    <link rel="stylesheet" href="lilly.css">
+    <link rel="stylesheet" href="jenna.css">
+    <link rel="stylesheet" href="michael.css">
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+
+    <!--Mark Comment 5/16: the latest stuff for Bootstrap 4 can be acquired from https://getbootstrap.com/docs/4.6/getting-started/introduction/   According to that page, the best practice now is to put the link before all other .css links (before line 6, but, actually, I'd move ethan.css to after the title element and then prob put the Bootstrap link between the title and your first custom .css link) and the script tags at the end of your document right before the closing /body tag.-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--Mark's Comment 5/16: I believe, technically, each page should only have one nav element that declares it to be the main navigation for the website. The other navbars that you have in each person's section should be using the div tag. Also, you need to add navbar-expand-XX (replacing XX with a screensize setting) for the horizontal links to appear correctly.-->
+    <nav class="navbar navbar-inverse">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Team 5 Group Index</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <!--Mark's Comment 5/16: link items in a navbar should have the nav-item class.-->
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">This goes nowhere</a></li>
+            <li><a href="#">This goes nowhere</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Does this go somewhere?</a></li>
+        </ul>
+
+
+        <img src="https://www.verywellmind.com/thmb/vbIDVbGmLI7IZ7qvJTjuyO3ImuY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-134573694-4450067f8294477d8ea9a88c5017e1a1.jpg"
+            alt="goose" style="width:40px" padding="width:10px">
+    </nav>
+    <div>
+        <h1 id="h1ethan">Can you see this?</h1>
+    </div>
+    <!--hover to change font color to red-->
+    <!--Mark's Comment 5/16: By declaring this div to be a row, you're declaring that it is part of a grid container, which makes any elements nested in it get treated as columns, which is why you're seeing the purple paragraph act like a flexbox next to the two flexbox containers that you've actually declared (and the rest of the elements are also being treated as columns...). Refer to this page https://getbootstrap.com/docs/4.0/layout/grid/#how-it-works I think what you should do is create a class="container" div to put the row div into. Then close the row div after line 53. Then create a new row to put the purple paragraph into. Then create another new row to put the flex containers into (unless you did actually want the purple paragraph to be treated as a flex container as well).-->
+    <div class="row">
+
+        <h2>I have <span style="color:blue;">blue </span> eyes.</h2>
+        <img src="https://www.wallpaperu3.com/wp-content/mywallpapers/mandarin-duck-4k-wallpaper-1024x640.jpg"
+            alt="mandarin_duck" title="mandarin duck" class="duck">
+        <!--image with a border on it-->
+        <div style="background-color: blueviolet;">
+            <p class="firstp"> THIS IS A PARAGRAPH. COOL BEANS.</p>
+            <!--paragraph class changes font to purple-->
+            <!--Mark's Comment 5/16: I'm not seeing the font color change here, just the background. Is that what you meant?-->
+            <!--Boostrap Flexboxs!-->
+        </div>
+        <div class="d-flex p-3 bg-secondary">
+            <div class="p-2 bg-info">Bg-Info</div>
+            <div class="p-2 bg-warning">Bg-Warning</div>
+            <div class="p-2 bg-primary">Bg-Primary</div>
+        </div>
+        <div class="d-flex justify-content-center flex-row bg-secondary">
+            <div class="p-2 bg-info"> Heloooo </div>
+            <div class="p-2 bg-warning"> Helooo </div>
+            <div class="p-2 bg-primary"> oooleH </div>
+        </div>
+
+        <h1>This is a List example</h1>
+        <ul>
+            <li>This</li>
+            <li>Is</li>
+            <li>A</li>
+            <li>List</li>
+            <li>Cool</li>
+            <li>Beans</li>
+        </ul>
+        <h2 class="ethanh2">Another list example</h2>
+        <ol>
+            <li>This</li>
+            <li>Is</li>
+            <li>Super</li>
+            <li>Cool</li>
+        </ol>
+
+        <h2>I heard you like Tables, so I got you some columns and rows.</h2>
+
+        <table>
+            <tr>
+                <th> Column1 </th>
+                <th> Column2 </th>
+            </tr>
+            <tr>
+                <td> Beep </td>
+                <td> Boop </td>
+            </tr>
+            <tr>
+                <td> Bop </td>
+                <td> Bope </td>
+            </tr>
+            <tr>
+                <td> Heyo </td>
+                <td> My table </td>
+            </tr>
+            <tr>
+                <td> Last row </td>
+                <td> Finish! </td>
+            </tr>
+        </table>
+    </div>
+    <!---Ethan end-->
+    <!--lilly start-->
+
+    <!-- NavBar created with image links -->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="">Check out the different bodies of water!</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link"
+                    href="https://cdn.britannica.com/s:800x1000/65/161665-050-C4B1FA75/Waves-North-Shore-Oahu-Hawaiian-Islands.jpg">Ocean</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="https://www.durango.com/wp-content/uploads/2018/05/mountain-lake-vallecito.jpg">Lake</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="https://upload.wikimedia.org/wikipedia/commons/d/df/JamesRiverWG.JPG">River</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Flexboxes -->
+
+    <div class="d-flex">
+        <div class="p-2 bg-info flex-nowrap">Ocean</div>
+        <div class="p-2 bg-warning flex-nowrap">Lake</div>
+        <div class="p-2 bg-primary flex-nowrap">River</div>
+    </div>
+
+    <div class="d-flex flex-column-reverse">
+        <div class="p-2 bg-info">Ocean</div>
+        <div class="p-2 bg-warning">Lake</div>
+        <div class="p-2 bg-primary">River</div>
+    </div>
+
+    <div style="background-color: goldenrod;">
+        <h1 id="h2id"> <strong> Water for the Ducks </strong></h1> <!-- Hover over for green italicized text-->
+        <h2> Water is <span style="color:blue"> blue. </span> </h2>
+        <p class="firstp"> Can you see this <em> Paragraph? </em> This is about ducks that swim in water. Water is a
+            liquid. Here is an image of the water in the ocean. Lorem ipsum dolor sit amet, nec probo aeque recusabo ut,
+            duo ridens tincidunt ea. Nam nulla intellegam at, dictas dignissim gloriatur eos ei. Ne dolor animal vix.
+            Usu ad brute repudiandae, animal laoreet sensibus id has. No mel omnes deleniti, unum summo id nam. </p>
+
+        <p> Erant accusam cu ius, ius delicata senserit ex. Ut vel omnes putant. Ut sint magna viderer nam. Vix ea
+            nominavi conceptam reformidans, nec in quis consequat. Sea an falli facilis percipit, te eum quaerendum
+            cotidieque, delenit placerat scripserit at vim. In est eros ignota graeci, case animal ex eos, iriure
+            quaestio corrumpit in vix. </p>
+        <img src="https://cdn.britannica.com/s:800x1000/65/161665-050-C4B1FA75/Waves-North-Shore-Oahu-Hawaiian-Islands.jpg"
+            alt="water" title="water wave" class="water">
+
+        <!-- Play with grid-->
+
+        <div class="row">
+            <div class="col">Grid Space 1</div>
+            <div class="col">Grid Space 2</div>
+            <div class="col">Grid Space 3</div>
+        </div>
+
+        <!-- Buttons created to linked images-->
+
+        <h2 class="firstp"> The water list </h2>
+        <ul>
+            <li> <a href="https://cdn.britannica.com/s:800x1000/65/161665-050-C4B1FA75/Waves-North-Shore-Oahu-Hawaiian-Islands.jpg"
+                    class="btn btn-info" role="button">Ocean</a> </li>
+
+            <li> <a href="https://www.durango.com/wp-content/uploads/2018/05/mountain-lake-vallecito.jpg"
+                    class="btn btn-info" role="button">Lake</a> </li>
+
+            <li> <a href="https://upload.wikimedia.org/wikipedia/commons/d/df/JamesRiverWG.JPG" class="btn btn-info"
+                    role="button">River</a> </li>
+
+            <li> <a href="https://images2.alphacoders.com/180/180742.jpg" class="btn btn-info" role="button">Rain</a>
+            </li>
+
+            <li> <a href="https://cdn5.vectorstock.com/i/1000x1000/67/89/silhouette-man-drinking-water-from-bottle-flow-vector-23726789.jpg"
+                    class="btn btn-info" role="button">Bodies</a> </li>
+        </ul>
+        <h2> Water can be found as</h2>
+        <ol>
+            <li> liquid </li>
+            <li> solid </li>
+            <li> gas </li>
+        </ol>
+        <h2 id="hello"> A table on Water </h2>
+        <table>
+            <tr>
+                <th> Water </th>
+                <th> Amount </th>
+            </tr>
+            <!--Mark's Comment 5/16: Technically, you should reserve th just for the headings and then use td for the content of regular cells in the table.-->
+            <tr>
+                <th> Ocean </th>
+                <th> 45% </th>
+            </tr>
+            <tr>
+                <th> River </th>
+                <th> 25% </th>
+            </tr>
+            <tr>
+                <th> Body </th>
+                <th> 85%</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <!--lilly end-->
+    <!--Jenna start-->
+    <div class="d-flex justify-content-center flex-row bg-secondary">
+        <div class="p-2 bg-info"> Goose 1 </div>
+        <div class="p-2 bg-warning"> Goose 2 </div>
+        <div class="p-2 bg-primary"> Goose 3 </div>
+    </div>
+    <div class="d-flex flex-column">
+        <div class="p-2 bg-info"> Goose 4 </div>
+        <div class="p-2 bg-warning"> Goose 5 </div>
+        <div class="p-2 bg-primary"> Goose 6 </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/originals/7f/fe/b5/7ffeb54dd516257fb7b31eda800c4c52.jpg" alt="Gosling logo"
+                style="width:40px;">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <!-- Highlighed current link = active link -->
+                <a class="nav-link" href="#"> Active Goose </a>
+            </li>
+            <li class="nav-item">
+                <!-- Normal link that highlights when hovered over -->
+                <a class="nav-link" href="#"> Link Goose </a>
+            </li>
+            <li class="nav-item">
+                <!-- Unclickable link = disabled link -->
+                <a class="nav-link disabled"> Disabled Link Goose </a>
+            </li>
+        </ul>
+    </nav>
+    <div style="background-color: rgb(198, 231, 107)" class="divborder">
+        <div style="background: yellowgreen !important" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1> Goose </h1>
+                <p> Goose? Goose. Geese are nice. Gosling? </p>
+            </div>
+        </div>
+        <h1 id="h1id"> <strong> A Div section about a goose </strong> </h1>
+        <h2> This <span style="color:red"> goose </span> is in this section. </h2>
+        <img src="https://nationalzoo.si.edu/sites/default/files/conservation/migratory-birds/news/cago1.jpg"
+            alt="goose" title="goose in water" class="gooseimage">
+        <p class="jennaparagraph"> Here's a fun fact about geese: There are actually different names for geese, another
+            type of bird that can go in water.
+            <br> <em> Goose </em> is actually a term for female geese, and male geese are called <em> ganders. </em> A
+            group of geese on land or in water
+            <br> are called a <em> gaggle, </em> and while they are in the air they are called a <em> skein. </em>
+            Interesting!
+        </p>
+
+        <h2> Here is a list of geese breeds</h2>
+        <!-- Found this information on wikipedia about the different breeds of geese-->
+        <ul class="jennaul">
+            <li> Adler goose </li>
+            <li> American buff goose </li>
+            <li> Danish landrace goose </li>
+            <li> Emden goose </li>
+        </ul>
+
+        <h2> Here is a fun fact about each geese breed listed </h2> <!-- Simply google searches -->
+        <ol class="jennaol">
+            <li> Adler geese rarely get sick and resists pests. </li>
+            <li> American buff geese are the largest of the medium weight class of geese. </li>
+            <li> Danish landrace geese are considered hardy birds that produce a low-fat carcass with a lot of meat.
+                (whaaat) </li>
+            <li> Emden geese is the only geese breed that is grown commercially for meat in North America due to its
+                large size (awh) </li>
+        </ol>
+
+        <h2> Here is where each geese breed is from </h2>
+        <table>
+            <tr>
+                <th> Name </th>
+                <th> Where it's from </th>
+            </tr>
+            <tr>
+                <td> Adler </td>
+                <td> Russia </td>
+            </tr>
+            <tr>
+                <td> American buff </td>
+                <td> North America </td>
+            </tr>
+            <tr>
+                <td> Danish landrace </td>
+                <td> Denmark </td>
+            </tr>
+            <tr>
+                <td> Emden </td>
+                <td> Germany </td>
+            </tr>
+        </table>
+    </div>
+    <!--Jenna end-->
+    <!--Michael Start-->
+    <div style="background-color: blueviolet;">
+        <h1 id="michaelH1Id"> <strong> Title Title Title Title </strong> </h1>
+        <!--Hover to change font to yellow and bold-->
+        <h2> This is the <span style="color: black;"> last </span> section of this webpage. </h2>
+        <!--NavBar-->
+        <!--Mark's Comment 5/16: You need to add a navbar-expand-XX (replacing XX with your desired screen resize behavior) class if you want the navbar to behave correctly with horizontal links.-->
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Section 4 of webpage</a>
+            </div>
+            <!--Mark's Comment 5/16: I think the nav class here is superfluous (and should actually be applied to the parent element to make it behave like a nav but maybe I'm wrong; just play around with it). See my comment on line 27, suggesting that you should change the nav element on line 327 to a div element.-->
+            <ul class="nav navbar-nav">
+                <!--Mark's Comment 5/16: list items in a navbar should have the nav-item class.-->
+                <li class="active"><a href="#">Back to top</a> </li>
+                <li><a href="https://showme0-9071.kxcdn.com/files/8107/pictures/thumbs/12251/thumbs1310530558.jpg">Section
+                        4 Image</a></li>
+            </ul>
+        </nav>
+
+        <img src="https://showme0-9071.kxcdn.com/files/8107/pictures/thumbs/12251/thumbs1310530558.jpg"
+            alt="smiley face" title="smiling" class="smileyFace">
+        <!--Image class allows image to be syled through .css stylesheet-->
+        <p class="michaelParagraph"> This is the last section of this webpage. This is the last section of this
+            webpage.This is the last section of this webpage.
+            <br> <em>This is the last section of this webpage.</em> This is the last section of this webpage. This is
+            the last section of this webpage.
+            <br> This is the last section of this webpage.This is the last section of this webpage.This is the last
+            section of this webpage.
+        </p>
+        <!--Paragraph class changes font to white and bold-->
+
+        <!--Grid-->
+        <!--Mark's Comment 5/16: Bootstrap's row and col classes are specifically for its grid system. Bootstrap grids are 12 columns wide so, while this may work, it's not technically correct since you only have 5 columns declared here. If you want fewer than 12 columns to display, you have to set some of the columns to span multiple columns wide such as with col-2-->
+        <div class="row">
+            <div class="col">One</div>
+            <div class="col">Two</div>
+            <div class="col">Three</div>
+            <div class="col">Four</div>
+            <div class="col">Five</div>
+        </div>
+
+        <h2> This is the last set of lists on this page </h2>
+        <ul style="color: aqua;">
+            <!--inline text stylization to aqua-->
+            <li>Ulitem1</li>
+            <!--Mark's Comment 5/16: the url you have in quote marks is outside of any element. It's being interpreted by a web browser as being in this unordered list but not as a list item, and, technically, is incorrect as it breaks the format of the list element.-->
+            <li>Ulitem2</li>"https://showme0-9071.kxcdn.com/files/8107/pictures/thumbs/12251/thumbs1310530558.jpg"
+            <li>Ulitem3</li>
+
+        </ul>
+
+        <ol>
+            <li>Olitem1</li>
+            <li>Olitem2</li>
+            <li>Olitem3</li>
+        </ol>
+
+        <!--Bootstrap Flexboxes-->
+        <div class="d-flex justify-content-center flex-row bg-secondary">
+            <div class="p-2 bg-info"> Section1 </div>
+            <div class="p-2 bg-warning"> Section2 </div>
+            <div class="p-2 bg-primary"> Section3 </div>
+        </div>
+
+        <div class="d-flex p-4 bg-primary">
+            <div class="p-2 bg-info"> sECTION4 </div>
+            <div class="p-2 bg-warning"> sECTION5 </div>
+            <div class="p-2 bg-primary"> sECTION6 </div>
+        </div>
+
+        <!--Jumbotron-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1>Section Four</h1>
+                <p>This statement is false.</p>
+            </div>
+        </div>
+
+
+        <table style="width : 100%">
+            <tr>
+                <th>Birthday</th>
+                <th>Birthmonth</th>
+                <th>Birthyear</th>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>May</td>
+                <td>2002</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>January</td>
+                <td>1999</td>
+            </tr>
+        </table>
+    </div>
+    <!--Michael End-->
+</body>
+
+</html>
