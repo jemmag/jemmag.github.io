@@ -1,0 +1,22 @@
+ol {
+    color:white;
+}
+
+p.michaelParagraph {
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#michaelH1Id:hover {
+    color:yellow;
+    font-weight: bolder;
+}
+
+img.smileyFace {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
