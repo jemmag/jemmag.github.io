@@ -8,22 +8,33 @@
 
 <p id="p1"></p>
 <p id="p2"></p>
+<h2>this is a Javascript function</h2>
+<p id="p3"></p>
 
 <script>
 var x = 5;
 var y = 6;
 var z = x + y;
-document.getElementById("p1").innerHTML =
-"x + y =z, z=: " +z;
+document.getElementById("p1").innerHTML = //writing out the math of 5 + 6 = 11
+"x + y =z, z=: " +z; //I'm assuming +z; just adds the value of whatever z is at the time as text
+</script>
 
-var vegetation = ["Tree","Plant","Grass","Flower"];
-document.getElementById("p2").innerHTML = vegetation
+<script>
+var vegetation = ["Tree","Plant","Grass","Flower"]; //array called vegetation
+document.getElementById("p2").innerHTML = vegetation //calls the array "vegetation" into the HTML to write out the variables
+</script>
 
 var x= theFunction(2,4)
 function theFunction(a,b) {
 return a + b;
 }
 
+<script>
+//Javascript function for multiplication
+function firstFunction(p1, p2) {
+    return p1 * p2;
+}
+document.getElementbyId("p3").innerHTML = firstFunction(10,20);
 </script>
 
 </body>
