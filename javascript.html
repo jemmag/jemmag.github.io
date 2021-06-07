@@ -10,6 +10,8 @@
 <p id="p2"></p>
 <h2>this is a Javascript function</h2>
 <p id="p3"></p>
+<p id="p4"></p>
+
 
 <script>
 var x = 5;
@@ -26,11 +28,17 @@ document.getElementById("p2").innerHTML = vegetation //calls the array "vegetati
 
 <script>
 //Javascript function for multiplication ~ Ethan
-function firstFunction(p1, p2) {
+function firstFunction (p1, p2) {
     return p1 * p2;
 }
 document.getElementbyId("p3").innerHTML = firstFunction(10,20);
 </script>
+
+<script>
+    if (x < 18) {
+      document.getElementById("p4").innerHTML = "x is less than 18";
+    }
+    </script>
 
 </body>
 </html>
