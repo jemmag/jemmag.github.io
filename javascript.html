@@ -46,20 +46,20 @@ document.getElementById("p5").innerHTML = "x is greater than 18";
     }
     </script>
 
-
 <script>
-var i;
-for (i = 0; i >20; i++) {
-"i=" +i;
-}
-document.getElementById("p6").innerHTML = text;
+    var ducks = ["Duck", "Chicken", "Goose", "Swan"];
+    var i, len, text;
+    for (i = 0, len = ducks.length, text = ""; i < len; i++) { //This part I don't understand very well
+      text += ducks[i] + "_";
+    }
+    document.getElementById("p6").innerHTML = text;
     </script>
 
 <button onclick="myFunction()"> Button </button>
-<p id="buttonClick"></p>
+<p id="buttonClick"></p> 
 
 <script>
-    function myFunction(){
+    function myFunction(){ //Made by Jenna
         document.getElementById("buttonClick").innerHTML = "You clicked the button.";
     }
 </script>
