@@ -4,7 +4,7 @@
 
 <h2>java practice</h2>
 
-<p>This is javascript and its very confusing to me</p>
+<p>This is javascript and its very confusing to me but w3 schools helped us a lot on this one</p>
 
 <p id="p1"></p>
 <p id="p2"></p>
@@ -17,13 +17,19 @@ document.getElementById("p1").innerHTML = //writing out the math of 5 + 6 = 11
 "x + y =z, z=: " +z; //I'm assuming +z; just adds the value of whatever z is at the time as text
 
 var vegetation = ["Tree","Plant","Grass","Flower"]; //array called vegetation
-document.getElementById("p2").innerHTML = vegetation //calls the array "vegetation" into the HTML i think
+document.getElementById("p2").innerHTML = vegetation //calls the array "vegetation" into the HTML to write out the variables
 </script>
 
 <h2>this is a Javascript function</h2>
 
-<script>
+<p id="p3"></p>
 
+<script>
+//Javascript function for multiplication
+function firstFunction(p1,p2) {
+    return p1 * p2;
+}
+document.getElementbyId("p3").innerHTML = firstFunction(10,20);
 </script>
 
 </body>
