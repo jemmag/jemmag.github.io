@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html>
+<!--Mark's Comment 6/9: Each html document must have a <head> element and a <title> element within that head so add that to this page!-->
+
 <body>
 
-<h2>JavaScript Variables</h2>
+  <h2>JavaScript Variables</h2>
 
-<p>This is javascript and its very confusing to me</p>
+  <p>This is javascript and its very confusing to me</p>
 
-<p id="p1"></p>
+  <p id="p1"></p>
 
-<p id="p2"></p>
-<h2>this is a Javascript function</h2>
-<p id="p3"></p>
-<p id="p4"></p>
-<p id="p5"></p>
-<p id="p6"></p>
+  <p id="p2"></p>
+  <h2>this is a Javascript function</h2>
+  <p id="p3"></p>
+  <p id="p4"></p>
+  <p id="p5"></p>
+  <p id="p6"></p>
 
-<script>
-var x = 5;
-var y = 6;
-var z = x + y;
-document.getElementById("p1").innerHTML = //writing out the math of 5 + 6 = 11 ~ Ethan
-"x + y =z, z=: " +z; //I'm assuming +z; just adds the value of whatever z is at the time as text ~ Ethan
-</script>
+  <!--Mark's Comment 6/9: There's no reason why you need to separate all these out with their own script sections. You could just declare one script element and put all of them in that one element. So, delete lines 27, 29, 33, 35, 41, 44, 51, and 53.-->
+  <script>
+    var x = 5;
+    var y = 6;
+    var z = x + y;
+    document.getElementById("p1").innerHTML = //writing out the math of 5 + 6 = 11 ~ Ethan
+      "x + y =z, z=: " + z; //I'm assuming +z; just adds the value of whatever z is at the time as text ~ Ethan
+  </script>
 
-<script>
-var vegetation = ["Tree","Plant","Grass","Flower"]; //array called vegetation ~ Ethan
-document.getElementById("p2").innerHTML = vegetation //calls the array "vegetation" into the HTML to write out the variables ~ Ethan
-</script>
+  <script>
+    var vegetation = ["Tree", "Plant", "Grass", "Flower"]; //array called vegetation ~ Ethan
+    document.getElementById("p2").innerHTML = vegetation //calls the array "vegetation" into the HTML to write out the variables ~ Ethan
+    // Mark's Comment 6/9: don't forget the semicolon on line 30.
+  </script>
 
-<script>
-//Javascript function for multiplication ~ Ethan
-function myFunction(p1, p2) {
-  return p1 * p2;
-}
-document.getElementById("p3").innerHTML = myFunction(5, 4);
-</script>
+  <script>
+    //Javascript function for multiplication ~ Ethan
+    function myFunction(p1, p2) {
+      return p1 * p2;
+    }
+    document.getElementById("p3").innerHTML = myFunction(5, 4);
+  </script>
 
 
-<script>
+  <script>
     if (x < 18) {
       document.getElementById("p4").innerHTML = "x is less than 18";
     }
     else {
-document.getElementById("p5").innerHTML = "x is greater than 18";
+      document.getElementById("p5").innerHTML = "x is greater than 18";
     }
-    </script>
+  </script>
 
-<script>
+  <script>
     var ducks = ["Duck", "Chicken", "Goose", "Swan"];
     var i, len, text;
     for (i = 0, len = ducks.length, text = ""; i < len; i++) { //This part I don't understand very well
       text += ducks[i] + "_";
     }
     document.getElementById("p6").innerHTML = text;
-    </script>
+  </script>
 
-<button onclick="myFunction()"> Button </button>
-<p id="buttonClick"></p> 
+  <button onclick="myFunction()"> Button </button>
+  <p id="buttonClick"></p>
 
-<script>
-    function myFunction(){ //Made by Jenna
-        document.getElementById("buttonClick").innerHTML = "You clicked the button.";
+  <script>
+    function myFunction() { //Made by Jenna
+      document.getElementById("buttonClick").innerHTML = "You clicked the button.";
     }
-</script>
+  </script>
 
 </body>
+
 </html>
